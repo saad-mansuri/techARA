@@ -314,6 +314,12 @@
     font-size: 50px;
     font-weight: 700;
 }
+@media only screen and (max-width: 767px) {
+    .get-started__title{
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
 .get-started__title span{
     color: #5268ff;
 }   
@@ -370,11 +376,12 @@
     .best-choice{
         padding: 80px 0;
     }
-    .best-choice_reverse-col{
+    /* .best-choice_reverse-col{
         flex-direction: column-reverse;
-    }
+    } */
     .best-choice_contents{
-        padding: 35px 0 0;
+        padding: 0 0 35px 0;
+        text-align: center;
     }
     .about-techara__contents{
         padding: 20px 0 0;
