@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 .cust-nav{
     /* padding: 20px auto !important; */
     /* height: 70px; */
@@ -9,6 +12,7 @@
 }
 .cust-nav__menu{
     /* margin-left: 40px; */
+    font-family: 'Roboto', sans-serif;
     color: #000000 !important;
     border: none;
     background: transparent;
@@ -38,12 +42,13 @@
 .cust-nav__hover:hover .cust-nav__hover-content{
     display: block;
 }
-.cust-nav__hover:hover .cust-nav__menu{
-    /* background-color: #000;
-    color: #ffffff !important; */
-}
+/* .cust-nav__hover:hover .cust-nav__menu{
+    background-color: #000;
+    color: #ffffff !important;
+} */
 
 .cust-nav__contact-btn{
+    font-family: 'Roboto', sans-serif;
     background-color: #5268ff;
     color: #ffffff;
     padding: 7px 23px;
@@ -59,22 +64,31 @@
 /* BEST CHOICE SECTTION */
 
 .best-choice{
-    padding: 80px 0;
+    padding: 100px 0;
 }
 .best-choice__sub-title{
+    font-family: 'Roboto', sans-serif;
     color: #929292;
 }
 .best-choice_head-title{
+    font-family: 'Roboto', sans-serif;
     font-size: 50px;
     max-width: 370px;
     font-weight: 700;
     line-height: 60px;
     color: #000000;
 }
+@media only screen and (max-width: 767px) {
+    .best-choice_head-title{
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
 .best-choice_head-title span{
     color: #5268ff;
 }
 .best-choice__disc{
+    font-family: 'Roboto', sans-serif;
     max-width: 400px;
     font-weight: normal;
     line-height: 1.5;
@@ -84,6 +98,11 @@
 .best-choice__img img{
     width: 100%;
     border-radius: 10% 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .best-choice__img img{
+        height: 450px;
+    }
 }
 
 
@@ -97,18 +116,25 @@
     border-radius: 0 10%;
     height: 450px;
 }
+@media only screen and (max-width: 767px){
+    .about-techara__img img{
+        height: 100%;
+    }
+}
 .about-techara__col{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .about-techara__title{
+    font-family: 'Roboto', sans-serif;
     font-size: 30px;
     font-weight: 700;
     color: #000000;
 }
 
 .about-techara__disc{
+    font-family: 'Roboto', sans-serif;
     max-width: 400px;
     font-weight: normal;
     line-height: 1.5;
@@ -122,10 +148,12 @@
     color: #353942;
 } */
 
+
 .services{
     padding: 100px 0;
 }
 .services__disc{
+    font-family: 'Roboto', sans-serif;
     max-width: 550px;
     font-size: 16px;
     font-weight: normal;
@@ -135,6 +163,7 @@
 }
 
 .services__title{
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
 
@@ -143,6 +172,15 @@
     box-shadow: 0px 0px 7px #ccc;
     border-radius: 10px;
 }
+@media only screen and (max-width: 768px) {
+    .services__wrapper{
+        padding:30px;}
+}
+
+@media only screen and (max-width: 1024px) {
+    .services__wrapper{
+        padding:30px;}
+}
 .service__wrapper-icon img{
     width: 50px;
 }
@@ -150,12 +188,14 @@
     margin-top: 82px;
 }
 .services__discover a{
+    font-family: 'Roboto', sans-serif;
     color: #5268ff;
     text-decoration: none;
 }
 .owl-carousel .services_right-arrow{
-    width: 35px !important;
+    width: 25px !important;
     height: 25px !important;
+    margin: auto 0 auto 5px;
 }
 /* .services_right-arrow{
     width: 35px !important;
@@ -168,6 +208,26 @@
     text-align: center;
 } */
 
+.our-portfolio .owl-carousel .owl-nav{
+    display: none;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background: #5268ff !important;
+    opacity: 1;
+    width: 13px;
+    height: 12px;
+}
+
+.owl-theme .owl-dots{
+    margin-top: 35px;
+}
+
+.owl-theme .owl-dots .owl-dot span{
+    background: #5268ff !important;
+    opacity: 0.3;
+
+}
 
 .our-portfolio__wrapper{
     margin: 10px 0;
@@ -183,18 +243,23 @@
     padding: 10px 10px   20px;
     border-bottom: 1px solid #ccc;
 }
-/* .our-portfolio__label{
-} */
+.our-portfolio__label{
+    font-family: 'Roboto', sans-serif;
+    clear: #000000;
+}
 .our-portfolio__sub-label{
+    font-family: 'Roboto', sans-serif;
     color: #5268ff;
     font-weight: normal;
 }
 .our-portfolio__disc{
+    font-family: 'Roboto', sans-serif;
     color: #929292;
     font-weight: normal;
     max-width: 280px;
 }
 .our-portfolio__view-project a{
+    font-family: 'Roboto', sans-serif;
     text-decoration: none;
     color: #5268ff;
 }
@@ -219,11 +284,17 @@
     color: #4d5058;
     font-weight: 500;
 }
+.testimonials__contents-wrap p{
+    font-family: 'Roboto', sans-serif;
+}
 /* .testimonials__details{
 } */
 .testimonials__details-img{
     width: 50px;
     border-radius: 50%;
+}
+.testimonials__details p {
+    font-family: 'Roboto', sans-serif;
 }
 .testimonials__details-labels{
     color: #7f7f7f;
@@ -239,6 +310,7 @@
     padding: 100px 0;
 }
 .get-started__title{
+    font-family: 'Roboto', sans-serif;
     font-size: 50px;
     font-weight: 700;
 }
@@ -246,11 +318,13 @@
     color: #5268ff;
 }   
 .get-started__disc{
+    font-family: 'Roboto', sans-serif;
     max-width: 400px;
     margin: auto;
     color: #929292;
 }
 .get-started__btn{
+    font-family: 'Roboto', sans-serif;
     background-color: #5268ff;
     color: #ffffff;
     padding: 7px 20px;
@@ -273,6 +347,7 @@
     text-decoration: none;
 }
 .footer-techara__copyright-content, .footer-techara__services-labels{
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: normal;
     color: #ffffff;
@@ -280,6 +355,7 @@
 }
 
 .footer-techara__services-title{
+    font-family: 'Roboto', sans-serif;
     font-size: 17px;
     font-weight: 700;
 }
@@ -292,13 +368,13 @@
 @media only screen and (max-width: 678px) {
     
     .best-choice{
-        padding: 50px 0;
+        padding: 80px 0;
     }
     .best-choice_reverse-col{
         flex-direction: column-reverse;
     }
     .best-choice_contents{
-        padding: 20px 0 0;
+        padding: 35px 0 0;
     }
     .about-techara__contents{
         padding: 20px 0 0;
